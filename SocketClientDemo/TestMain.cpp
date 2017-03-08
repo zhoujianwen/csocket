@@ -9,9 +9,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "test_tcp_client1.h"
+#include "test_udp_client1.h"
 
 int main(void) {
 	puts("Hello World!!!");
-	test_tcp_client1();
+//	test_tcp_client1();
+	test_udp_client1();
 	return EXIT_SUCCESS;
 }
