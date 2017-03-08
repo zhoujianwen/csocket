@@ -14,7 +14,7 @@ using namespace std;
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#define MYPORT 6667
+#define MYPORT 8787
 #define BACKLOG 10
 
 void test_tcp_server1(void)
