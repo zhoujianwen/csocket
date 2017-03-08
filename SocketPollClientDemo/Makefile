@@ -1,6 +1,7 @@
 CXXFLAGS =	-O2 -g -Wall -fmessage-length=0
 
-OBJS =		SocketPollClientDemo.o
+OBJS =		TestMain.o	\
+			test_poll_client1.o
 
 LIBS =
 
