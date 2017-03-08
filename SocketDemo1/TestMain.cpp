@@ -1,7 +1,7 @@
 /*
  * TestMain.cpp
  *
- *  Created on: 2017Äê3ÔÂ7ÈÕ
+ *  Created on: 2017ï¿½ï¿½3ï¿½ï¿½7ï¿½ï¿½
  *      Author: Administrator
  */
 
@@ -14,6 +14,7 @@
 #include "test_socket_connect.h"
 #include "test_socket_accept.h"
 #include "test_socket_host.h"
+#include "test_socket_select.h"
 
 int main(void) {
 	puts("Hello World!!!");
@@ -22,7 +23,8 @@ int main(void) {
 //	test_socket_bind();
 //	test_socket_connect();
 //	test_socket_accept();
-	test_socket_host();
+//	test_socket_host();
+	test_socket_select();
 	return EXIT_SUCCESS;
 }
 

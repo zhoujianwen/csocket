@@ -20,7 +20,6 @@ cocos2d/cocos/platform/android/java/bin/
 proj.android/gen/
 JuFanAnim/code/novo_spine/proj.win32/Release.win32/
 
-
 #################
 ## Eclipse
 #################
@@ -220,3 +219,4 @@ pip-log.txt
 *.out
 *.app
 .metadata
+.settings
