@@ -1,6 +1,7 @@
 CXXFLAGS =	-O2 -g -Wall -fmessage-length=0
 
-OBJS =		TestMain.o
+OBJS =		TestMain.o	\
+			test_tcp_client1.o
 
 LIBS =
 
