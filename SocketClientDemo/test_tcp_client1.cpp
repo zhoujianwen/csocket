@@ -15,7 +15,7 @@ using namespace std;
 #include <stdlib.h>
 #include <unistd.h>
 
-#define PORT 6667
+#define PORT 8787
 #define MAXDATASIZE 100
 #define IP "127.0.0.1"
 
@@ -42,6 +42,9 @@ void test_tcp_client1(void)
 		perror("connect");
 		exit(1);
 	}
+
+	char * msg = "hello server,i'm client55555";
+	send(sockfd, msg, strlen(msg) +1,0);
 
 	if ((numbytes=recv(sockfd, buf, MAXDATASIZE, 0)) == -1)
 	{
