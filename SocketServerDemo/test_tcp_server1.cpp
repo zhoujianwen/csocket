@@ -1,8 +1,8 @@
 /*
  * test_tcp_server1.cpp
  *
- *  Created on: 2017Äê3ÔÂ8ÈÕ
- *      Author: Administrator
+ *  Created on: 2017ï¿½ï¿½3ï¿½ï¿½8ï¿½ï¿½
+ *      Author: pix
  */
 
 #include "test_tcp_server1.h"
@@ -42,8 +42,8 @@ void test_tcp_server1(void)
 		perror("bind");
 		return ;
 	}
-	cout<<"server bind success.."<<endl;
-	//listen
+	cout<<"server bind success,port:"<<MYPORT<<endl;
+	// listen
 	int listen_res = listen(server_sockfd,BACKLOG);
 	if(listen_res == -1)
 	{
@@ -63,7 +63,7 @@ void test_tcp_server1(void)
 		cout<<"accept client connect success IP:"<<inet_ntoa(client_addr.sin_addr)<<endl;
 		if (!fork()) {
 			if(send(client_sockfd,"Hello,i am server!\n\0",20,0)== -1) {
-					perror("send");
+				perror("send");
 			}
 			cout<<"send msg success..\n"<<endl;
 			close(client_sockfd);
