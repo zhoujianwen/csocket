@@ -13,6 +13,7 @@
 #include "test_socket_bind.h"
 #include "test_socket_connect.h"
 #include "test_socket_accept.h"
+#include "test_socket_host.h"
 
 int main(void) {
 	puts("Hello World!!!");
@@ -20,7 +21,8 @@ int main(void) {
 //	test_socket();
 //	test_socket_bind();
 //	test_socket_connect();
-	test_socket_accept();
+//	test_socket_accept();
+	test_socket_host();
 	return EXIT_SUCCESS;
 }
 
